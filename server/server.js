@@ -2,11 +2,13 @@ import express from 'express';
 import path from 'path';
 
 import * as middlewares from './middlewares';
+import routes from './routes';
 
 const PORT = process.env.PORT || 9000;
 const app = express();
 const router = express.Router();
 
+router.use('/api', routes(router));
 router.use('^/$', middlewares.renderOnServer);
 router.use(express.static(path.resolve(__dirname, '..', 'build'), { maxAge: '30d' }));
 
