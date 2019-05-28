@@ -14,6 +14,6 @@ export const renderOnServer = (req, res, next) => {
 
     const markup = ReactDOMServer.renderToString(<App />);
 
-    return res.send(htmlData.replace('<div id="root"></div>', `<div>${markup}</div>`));
+    return res.send(htmlData.replace('<div id="root"></div>', `<div id="root">${markup}</div>`));
   });
 };

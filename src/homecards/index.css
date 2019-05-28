@@ -1,0 +1,81 @@
+.homecards {
+  padding: 0.85rem;
+}
+.homecard {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-light);
+  margin-bottom: 1rem;
+  padding: 0.85rem;
+}
+.homecard:last-child {
+  margin-bottom: 0;
+}
+.homecard-image {
+  margin: 0;
+  width: 100%;
+  min-height: 10rem;
+  overflow: hidden;
+}
+.homecard-image img {
+  width: 100%;
+}
+.homecard-detail {
+  padding: 1rem 0;
+}
+.homecard-title {
+  margin-top: 0;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.homecard-price {
+  text-align: right;
+  width: auto;
+}
+.homecard-price span {
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-gray-dark);
+  color: var(--color-yellow);
+}
+.homecard-actions {
+  display: flex;
+}
+.homecard-actions .btn-secondary {
+  display: none;
+}
+.homecard-actions .btn-primary {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .homecard,
+  .homecard-detail {
+    display: flex;
+  }
+  .homecard-image {
+    height: 10rem;
+    width: 20%;
+  }
+  .homecard-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.25rem;
+    width: 100%;
+  }
+  .homecard-detail {
+    flex: 1;
+  }
+  .homecard-actions {
+    justify-content: flex-end;
+    flex: 0 1 auto;
+  }
+  .homecard-actions .btn-secondary {
+    display: initial;
+  }
+  .homecard-actions .btn-primary {
+    width: auto;
+  }
+}

@@ -1,4 +1,5 @@
 body {
+  background-color: var(--color-gray-light);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -10,4 +11,51 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+:root {
+  --color-primary: #3D8F31;
+  --color-primary-dark: #146A20;
+  --color-secondary: #F09218;
+  --color-yellow: #FCD103;
+  --color-white: #FFFFFF;
+  --color-gray-dark: #343133;
+  --color-gray-mid: #A2A2A2;
+  --color-gray-light: #D2D2D2;
+}
+
+button {
+  --background: var(--color-gray-dark);
+  --color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--color);
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-bottom: 4px solid rgba(0,0,0,.4);
+  line-height: 1.5;
+  padding: 0.35rem 1.5rem;
+  margin: 0 0.5rem 0 0;
+  cursor: pointer;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+}
+button:last-child {
+  margin-right: 0;
+}
+button:hover,
+button:active {
+  background-color: transparent;
+  color: var(--background);
+  border-color: var(--background);
+}
+
+button.btn-primary {
+  --background: var(--color-primary);
+}
+
+button.btn-secondary {
+  --background: var(--color-secondary);
 }

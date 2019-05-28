@@ -31,5 +31,5 @@ export const transformHomecards = data => {
   return { homecards };
 }
 
-const buildHomeCardData = ({ adId, currencySymbol, pricePerMonth, photoUrls, title }) =>
-  ({ adId, currencySymbol, pricePerMonth, photoUrls, title });
+const buildHomeCardData = ({ id, adId, currencySymbol, pricePerMonth, photoUrls, title }) =>
+  ({ id, adId, currencySymbol, pricePerMonth, photoUrls, title });
