@@ -20,7 +20,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "yarn build && node server/index.js",
+    "serve": "node ./server/index.js",
+    "deploy": "npm run build && npm run serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
