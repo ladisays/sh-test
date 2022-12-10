@@ -9,7 +9,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.4.4",
     "es6-promise": "^4.2.6",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ignore-styles": "^5.0.1",
     "isomorphic-fetch": "^2.2.1",
     "query-string": "^6.5.0",
